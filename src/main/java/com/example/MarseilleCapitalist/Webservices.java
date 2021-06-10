@@ -3,6 +3,8 @@ package com.example.MarseilleCapitalist;
 
 import org.apache.tomcat.util.http.parser.MediaType;
 
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
 import javax.xml.ws.Response;
 
 @Path("generic")
