@@ -25,10 +25,11 @@ public class Services {
 
             System.out.println(world);
         }
-        catch (JAXBException | JAXBException e)
+        catch (JAXBException e)
         {
             e.printStackTrace();
         }
+        return null;
     }
 
     public void saveWorldToXml(World world){

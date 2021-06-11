@@ -1,25 +1,26 @@
 package com.example.MarseilleCapitalist;
 
+import javax.ws.rs.core.MediaType;
 
-import org.apache.tomcat.util.http.parser.MediaType;
-
+import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
-import javax.xml.ws.Response;
+import javax.ws.rs.core.Response;
 
 @Path("generic")
 public class Webservices {
     Services services;
 
-    public void Webservice(){
+    public Webservices(){
         services = new Services();
     }
 
     @GET
     @Path("world")
-    @Produces(MediaType.APPLICATION_XML)
+    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Response getWorld(){
-        return Response.ok(Services.getWorld()).build();
+
+        return Response.ok(services.getWorld()).build();
     }
 
 }
