@@ -5,8 +5,7 @@
 // Généré le : 2021.06.08 à 09:41:43 AM CEST 
 //
 
-
-package generated;
+package com.example.MarseilleCapitalist.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

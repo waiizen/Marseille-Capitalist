@@ -6,7 +6,7 @@
 //
 
 
-package generated;
+package com.example.MarseilleCapitalist.generated;
 
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;

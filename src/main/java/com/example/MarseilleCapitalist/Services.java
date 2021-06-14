@@ -1,10 +1,11 @@
 package com.example.MarseilleCapitalist;
 
+import com.example.MarseilleCapitalist.generated.World;
+
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
-import generated.World;
 
 import java.io.*;
 
@@ -21,15 +22,16 @@ public class Services {
 
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 
-            generated.World world = (World) jaxbUnmarshaller.unmarshal(input);
+            World world = (World) jaxbUnmarshaller.unmarshal(input);
 
             System.out.println(world);
+            return world;
         }
         catch (JAXBException e)
         {
             e.printStackTrace();
+            return null;
         }
-        return null;
     }
 
     public void saveWorldToXml(World world){
