@@ -11,7 +11,7 @@ public class JerseyConfig extends ResourceConfig {
 
     public JerseyConfig(){
         register(Webservices.class);
-        register(RequestFilter.CORSResponseFilter.class);
+        register(CORSResponseFilter.class);
     }
 
 }
