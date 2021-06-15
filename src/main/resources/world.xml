@@ -2,7 +2,7 @@
 <world>
     <name>Marseille Capitalist</name>
     <logo>marseille.png</logo>
-    <money>0</money>
+    <money>485439543098 </money>
     <score>0</score>
     <totalangels>0</totalangels>
     <activeangels>0</activeangels>
@@ -12,7 +12,7 @@
         <product>
             <id>1</id>
             <name>lalgerino</name>
-            <logo>lalgerino.png</logo>
+            <logo>lalgerino.jpg</logo>
             <cout>3</cout>
             <croissance>7</croissance>
             <revenu>1</revenu>
@@ -57,7 +57,7 @@
             <cout>60</cout>
             <croissance>15</croissance>
             <revenu>40</revenu>
-            <vitesse>15</vitesse>
+            <vitesse>6</vitesse>
             <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
@@ -83,6 +83,170 @@
                 <pallier>
                     <name>sopranoUpgrade</name>
                     <logo>sopranoUpgrade.png</logo>
+                    <seuil>150</seuil>
+                    <idcible>1</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+        <product>
+            <id>3</id>
+            <name>Soso Maness</name>
+            <logo>soso.png</logo>
+            <cout>720</cout>
+            <croissance>14</croissance>
+            <revenu>540</revenu>
+            <vitesse>15</vitesse>
+            <quantite>0</quantite>
+            <timeleft>0</timeleft>
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>sosoManessUpgrade</name>
+                    <logo>sosoManessUpgrade.png</logo>
+                    <seuil>50</seuil>
+                    <idcible>1</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>sosoManessUpgrade</name>
+                    <logo>sosoManessUpgrade.png</logo>
+                    <seuil>100</seuil>
+                    <idcible>1</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>sosoManessUpgrade</name>
+                    <logo>sosoManessUpgrade.png</logo>
+                    <seuil>150</seuil>
+                    <idcible>1</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+        <product>
+            <id>4</id>
+            <name>Sch</name>
+            <logo>sch.jpg</logo>
+            <cout>8640</cout>
+            <croissance>13</croissance>
+            <revenu>4320</revenu>
+            <vitesse>30</vitesse>
+            <quantite>0</quantite>
+            <timeleft>0</timeleft>
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>schUpgrade</name>
+                    <logo>schUpgrade.png</logo>
+                    <seuil>50</seuil>
+                    <idcible>1</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>schUpgrade</name>
+                    <logo>schUpgrade.png</logo>
+                    <seuil>100</seuil>
+                    <idcible>1</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>schUpgrade</name>
+                    <logo>schUpgrade.png</logo>
+                    <seuil>150</seuil>
+                    <idcible>1</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+        <product>
+            <id>5</id>
+            <name>Naps</name>
+            <logo>naps.png</logo>
+            <cout>103680</cout>
+            <croissance>12</croissance>
+            <revenu>51840</revenu>
+            <vitesse>60</vitesse>
+            <quantite>0</quantite>
+            <timeleft>0</timeleft>
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>napsUpgrade</name>
+                    <logo>napsUpgrade.png</logo>
+                    <seuil>50</seuil>
+                    <idcible>1</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>napsUpgrade</name>
+                    <logo>napsUpgrade.png</logo>
+                    <seuil>100</seuil>
+                    <idcible>1</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>napsUpgrade</name>
+                    <logo>napsUpgrade.png</logo>
+                    <seuil>150</seuil>
+                    <idcible>1</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+        <product>
+            <id>6</id>
+            <name>Jul</name>
+            <logo>jul.jpg</logo>
+            <cout>1244160</cout>
+            <croissance>11</croissance>
+            <revenu>622080</revenu>
+            <vitesse>120</vitesse>
+            <quantite>0</quantite>
+            <timeleft>0</timeleft>
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>julUpgrade</name>
+                    <logo>julUpgrade.png</logo>
+                    <seuil>50</seuil>
+                    <idcible>1</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>julUpgrade</name>
+                    <logo>julUpgrade.png</logo>
+                    <seuil>100</seuil>
+                    <idcible>1</idcible>
+                    <ratio>2</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>julUpgrade</name>
+                    <logo>julUpgrade.png</logo>
                     <seuil>150</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
