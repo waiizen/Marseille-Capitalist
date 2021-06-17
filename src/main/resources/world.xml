@@ -16,7 +16,7 @@
             <cout>3</cout>
             <croissance>7</croissance>
             <revenu>1</revenu>
-            <vitesse>1</vitesse>
+            <vitesse>3000</vitesse>
             <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
