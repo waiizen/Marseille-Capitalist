@@ -2,7 +2,7 @@
 <world>
     <name>Marseille Capitalist</name>
     <logo>marseille.png</logo>
-    <money>485439543098 </money>
+    <money>485</money>
     <score>0</score>
     <totalangels>0</totalangels>
     <activeangels>0</activeangels>
