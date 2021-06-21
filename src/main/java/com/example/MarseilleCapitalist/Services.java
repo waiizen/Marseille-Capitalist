@@ -14,10 +14,13 @@ public class Services {
     File xmlFile = new File("resources/world.xml");
     JAXBContext jaxbContext;
 
-    public World readWorldFromXml(){
+    public World readWorldFromXml(String username){
         try
         {
-            InputStream input = getClass().getClassLoader().getResourceAsStream("world.xml");
+            InputStream input = getClass().getClassLoader().getResourceAsStream(username+"-world.xml");
+            if (input.available() == -1){
+                input = getClass().getClassLoader().getResourceAsStream("world.xml");
+            }
             jaxbContext = JAXBContext.newInstance(World.class);
 
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
@@ -27,14 +30,14 @@ public class Services {
             System.out.println(world);
             return world;
         }
-        catch (JAXBException e)
+        catch (JAXBException | IOException e)
         {
             e.printStackTrace();
             return null;
         }
     }
 
-    public void saveWorldToXml(World world){
+    public void saveWorldToXml(World world, String username){
         try
         {
             //Create JAXB Context
@@ -47,7 +50,7 @@ public class Services {
             jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 
             //Store XML to File
-            File file = new File("resources/world.xml");
+            File file = new File("resources/"+username+"-world.xml");
             OutputStream output = new FileOutputStream(file);
 
             //Writes XML file to file-system
