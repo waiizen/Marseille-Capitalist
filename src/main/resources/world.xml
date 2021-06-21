@@ -180,7 +180,7 @@
             <cout>103680</cout>
             <croissance>12</croissance>
             <revenu>51840</revenu>
-            <vitesse>60</vitesse>
+            <vitesse>60000</vitesse>
             <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
