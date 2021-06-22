@@ -10,7 +10,7 @@ import javax.ws.rs.ApplicationPath;
 public class JerseyConfig extends ResourceConfig {
 
     public JerseyConfig(){
-        register(Webservices.class);
+        register(Webservice.class);
         register(CORSResponseFilter.class);
     }
 

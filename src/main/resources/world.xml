@@ -2,7 +2,7 @@
 <world>
     <name>Marseille Capitalist</name>
     <logo>marseille.png</logo>
-    <money>485</money>
+    <money>9999</money>
     <score>0</score>
     <totalangels>0</totalangels>
     <activeangels>0</activeangels>
@@ -14,10 +14,10 @@
             <name>lalgerino</name>
             <logo>lalgerino.jpg</logo>
             <cout>3</cout>
-            <croissance>7</croissance>
+            <croissance>1.07</croissance>
             <revenu>1</revenu>
             <vitesse>3000</vitesse>
-            <quantite>0</quantite>
+            <quantite>1</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
             <palliers>
@@ -55,7 +55,7 @@
             <name>soprano</name>
             <logo>soprano.png</logo>
             <cout>60</cout>
-            <croissance>15</croissance>
+            <croissance>1.15</croissance>
             <revenu>40</revenu>
             <vitesse>6</vitesse>
             <quantite>0</quantite>
@@ -96,7 +96,7 @@
             <name>Soso Maness</name>
             <logo>soso.png</logo>
             <cout>720</cout>
-            <croissance>14</croissance>
+            <croissance>1.14</croissance>
             <revenu>540</revenu>
             <vitesse>15</vitesse>
             <quantite>0</quantite>
@@ -137,7 +137,7 @@
             <name>Sch</name>
             <logo>sch.jpg</logo>
             <cout>8640</cout>
-            <croissance>13</croissance>
+            <croissance>1.13</croissance>
             <revenu>4320</revenu>
             <vitesse>30</vitesse>
             <quantite>0</quantite>
@@ -178,7 +178,7 @@
             <name>Naps</name>
             <logo>naps.png</logo>
             <cout>103680</cout>
-            <croissance>12</croissance>
+            <croissance>1.12</croissance>
             <revenu>51840</revenu>
             <vitesse>60000</vitesse>
             <quantite>0</quantite>
@@ -219,7 +219,7 @@
             <name>Jul</name>
             <logo>jul.jpg</logo>
             <cout>1244160</cout>
-            <croissance>11</croissance>
+            <croissance>1.11</croissance>
             <revenu>622080</revenu>
             <vitesse>120</vitesse>
             <quantite>0</quantite>
