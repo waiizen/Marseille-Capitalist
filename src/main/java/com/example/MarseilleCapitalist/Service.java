@@ -167,4 +167,65 @@ public class Service {
         return true;
     }
 
+    public Boolean updateUpgrade(String username, PallierType newupgrade) {
+
+        World world = this.getWorld(username);
+        world = this.calculScore(world);
+
+        int upgradeIndex = 0;
+        for (PallierType u : world.getUpgrades().getPallier()) {
+            if (newupgrade.getName().equals(u.getName())) {
+                upgradeIndex = world.getUpgrades().getPallier().indexOf(u);
+            }
+        }
+
+        PallierType upgrade = world.getUpgrades().getPallier().get(upgradeIndex);
+        if (upgrade == null) {
+            return false;
+        } else {
+            upgrade.setUnlocked(true);
+        }
+
+        ProductType product = world.getProducts().getProduct().get(upgrade.getIdcible() - 1);
+        if (product == null) {
+            return false;
+        } else {
+            switch (upgrade.getIdcible()) {
+                case -1:
+                    world.setAngelbonus((int) (world.getAngelbonus() + upgrade.getRatio()));
+                    break;
+                case 0:
+                    for (ProductType p : world.getProducts().getProduct()) {
+                        this.applyPallier(p, upgrade);
+                    }
+                    break;
+                default:
+                    this.applyPallier(product, upgrade);
+                    break;
+            }
+        }
+
+        // soustraire de l'argent du joueur le cout du manager
+        world.setMoney(world.getMoney() - upgrade.getSeuil());
+
+        // sauvegarder les changements au monde
+        this.saveWorldToXml(world, username);
+        return true;
+    }
+
+    public void applyPallier(ProductType product, PallierType pallier) {
+        switch (pallier.getTyperatio()) {
+            case VITESSE:
+                System.out.println("Vitesse diminuée");
+                product.setVitesse((int) (product.getVitesse() / pallier.getRatio()));
+                product.setTimeleft((int) (product.getTimeleft() / pallier.getRatio()));
+                break;
+            case GAIN:
+                product.setRevenu(product.getRevenu() * pallier.getRatio());
+                break;
+            default:
+                break;
+        }
+    }
+
 }
