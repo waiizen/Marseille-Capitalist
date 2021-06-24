@@ -398,5 +398,41 @@
             <typeratio>vitesse</typeratio>
             <unlocked>false</unlocked>
         </pallier>
+        <pallier>
+            <name>warnerMusic2</name>
+            <logo>warnerMusic.png</logo>
+            <seuil>7500</seuil>
+            <idcible>3</idcible>
+            <ratio>1</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>warnerMusic3</name>
+            <logo>warnerMusic.png</logo>
+            <seuil>10000</seuil>
+            <idcible>4</idcible>
+            <ratio>1</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>warnerMusic4</name>
+            <logo>warnerMusic.png</logo>
+            <seuil>12000</seuil>
+            <idcible>5</idcible>
+            <ratio>1</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>warnerMusic5</name>
+            <logo>warnerMusic.png</logo>
+            <seuil>15000</seuil>
+            <idcible>6</idcible>
+            <ratio>1</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
     </managers>
 </world>
