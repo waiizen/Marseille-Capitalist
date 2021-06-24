@@ -42,6 +42,7 @@ public class Service {
 
         }
         this.calculScore(world);
+        System.out.println("worldMoney:"+world.getMoney());
         return world;
     }
 
@@ -67,18 +68,23 @@ public class Service {
         ProductType product = findProductById(world, newproduct.getId());
 
         if (product == null) {return false;}
-
-        int qtchange = newproduct.getQuantite() - product.getQuantite();
-        if (qtchange > 0) {
-            // soustraire de l'argent du joueur le cout de la quantité
-            // achetée et mettre à jour la quantité de product
-            // uN = u1 ((1-r^n)/(1-r))
-            double argent = product.getCout() * Math.pow(product.getCroissance(), qtchange);
+        int qttChange = newproduct.getQuantite() - product.getQuantite();
+        if (qttChange == 1) {
+            double argent = product.getCout() * Math.pow(product.getCroissance(), product.getQuantite() - 1);
             double argent2 = world.getMoney() - argent;
 
             world.setMoney(argent2);
 
-            int nbproduit = product.getQuantite() + qtchange;
+            int nbproduit = product.getQuantite() + qttChange;
+            product.setQuantite(nbproduit);
+        } else if (qttChange > 1) {
+            // cout d'achat de n produits
+            double coutAchatNProduits = (product.getCout() * (1-(Math.pow(product.getCroissance(),qttChange))))/(1-product.getCroissance());
+
+            // on soustrait ce cout a l'argent
+            world.setMoney(world.getMoney() - coutAchatNProduits);
+
+            int nbproduit = product.getQuantite() + qttChange;
             product.setQuantite(nbproduit);
 
         } else {
