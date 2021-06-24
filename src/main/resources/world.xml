@@ -2,7 +2,7 @@
 <world>
     <name>Marseille Capitalist</name>
     <logo>marseille.png</logo>
-    <money>9999</money>
+    <money>9999999</money>
     <score>0</score>
     <totalangels>0</totalangels>
     <activeangels>0</activeangels>
@@ -22,8 +22,8 @@
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>lalgerinoUpgrade</name>
-                    <logo>lalgerinoUpgrade.png</logo>
+                    <name>L'Algerino sur le Vieux-Port</name>
+                    <logo>lalgerinoUnlock.png</logo>
                     <seuil>50</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
@@ -31,8 +31,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>lalgerinoUpgrade</name>
-                    <logo>lalgerinoUpgrade.png</logo>
+                    <name>L'Algerino à la Bonne-Mère</name>
+                    <logo>lalgerinoUnlock.png</logo>
                     <seuil>100</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
@@ -40,8 +40,8 @@
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>lalgerinoUpgrade</name>
-                    <logo>lalgerinoUpgrade.png</logo>
+                    <name>L'Algerino au Vélodrome</name>
+                    <logo>lalgerinoUnlock.png</logo>
                     <seuil>150</seuil>
                     <idcible>1</idcible>
                     <ratio>2</ratio>
@@ -53,7 +53,7 @@
         <product>
             <id>2</id>
             <name>soprano</name>
-            <logo>soprano.png</logo>
+            <logo>soprano.jpg</logo>
             <cout>60</cout>
             <croissance>1.15</croissance>
             <revenu>40</revenu>
@@ -63,28 +63,28 @@
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>sopranoUpgrade</name>
-                    <logo>sopranoUpgrade.png</logo>
+                    <name>Soprano sur le Vieux-Port</name>
+                    <logo>sopranoUnlock.png</logo>
                     <seuil>50</seuil>
-                    <idcible>1</idcible>
+                    <idcible>2</idcible>
                     <ratio>2</ratio>
                     <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>sopranoUpgrade</name>
-                    <logo>sopranoUpgrade.png</logo>
+                    <name>Soprano à la Bonne-Mère</name>
+                    <logo>sopranoUnlock.png</logo>
                     <seuil>100</seuil>
-                    <idcible>1</idcible>
+                    <idcible>2</idcible>
                     <ratio>2</ratio>
                     <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>sopranoUpgrade</name>
-                    <logo>sopranoUpgrade.png</logo>
+                    <name>Soprano au Vélodrome</name>
+                    <logo>sopranoUnlock.png</logo>
                     <seuil>150</seuil>
-                    <idcible>1</idcible>
+                    <idcible>2</idcible>
                     <ratio>2</ratio>
                     <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
@@ -94,7 +94,7 @@
         <product>
             <id>3</id>
             <name>Soso Maness</name>
-            <logo>soso.png</logo>
+            <logo>soso.jpg</logo>
             <cout>720</cout>
             <croissance>1.14</croissance>
             <revenu>540</revenu>
@@ -104,28 +104,28 @@
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>sosoManessUpgrade</name>
-                    <logo>sosoManessUpgrade.png</logo>
+                    <name>Soso Maness sur le Vieux-Port</name>
+                    <logo>sosoManessUnlock.png</logo>
                     <seuil>50</seuil>
-                    <idcible>1</idcible>
+                    <idcible>3</idcible>
                     <ratio>2</ratio>
                     <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>sosoManessUpgrade</name>
-                    <logo>sosoManessUpgrade.png</logo>
+                    <name>Soso Maness à la Bonne-Mère</name>
+                    <logo>sosoManessUnlock.png</logo>
                     <seuil>100</seuil>
-                    <idcible>1</idcible>
+                    <idcible>3</idcible>
                     <ratio>2</ratio>
                     <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>sosoManessUpgrade</name>
-                    <logo>sosoManessUpgrade.png</logo>
+                    <name>Soso Maness au Vélodrome</name>
+                    <logo>sosoManessUnlock.png</logo>
                     <seuil>150</seuil>
-                    <idcible>1</idcible>
+                    <idcible>3</idcible>
                     <ratio>2</ratio>
                     <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
@@ -145,28 +145,28 @@
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>schUpgrade</name>
-                    <logo>schUpgrade.png</logo>
+                    <name>Sch sur le Vieux-Port</name>
+                    <logo>schUnlock.png</logo>
                     <seuil>50</seuil>
-                    <idcible>1</idcible>
+                    <idcible>4</idcible>
                     <ratio>2</ratio>
                     <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>schUpgrade</name>
-                    <logo>schUpgrade.png</logo>
+                    <name>Sch à la Bonne-Mère</name>
+                    <logo>schUnlock.png</logo>
                     <seuil>100</seuil>
-                    <idcible>1</idcible>
+                    <idcible>4</idcible>
                     <ratio>2</ratio>
                     <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>schUpgrade</name>
-                    <logo>schUpgrade.png</logo>
+                    <name>Sch au Vélodrome</name>
+                    <logo>schUnlock.png</logo>
                     <seuil>150</seuil>
-                    <idcible>1</idcible>
+                    <idcible>4</idcible>
                     <ratio>2</ratio>
                     <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
@@ -186,28 +186,28 @@
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>napsUpgrade</name>
-                    <logo>napsUpgrade.png</logo>
+                    <name>Naps sur le Vieux-Port</name>
+                    <logo>napsUnlock.png</logo>
                     <seuil>50</seuil>
-                    <idcible>1</idcible>
+                    <idcible>5</idcible>
                     <ratio>2</ratio>
                     <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>napsUpgrade</name>
-                    <logo>napsUpgrade.png</logo>
+                    <name>Naps à la Bonne-Mère</name>
+                    <logo>napsUnlock.png</logo>
                     <seuil>100</seuil>
-                    <idcible>1</idcible>
+                    <idcible>5</idcible>
                     <ratio>2</ratio>
                     <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>napsUpgrade</name>
-                    <logo>napsUpgrade.png</logo>
+                    <name>Naps au Vélodrome</name>
+                    <logo>napsUnlock.png</logo>
                     <seuil>150</seuil>
-                    <idcible>1</idcible>
+                    <idcible>5</idcible>
                     <ratio>2</ratio>
                     <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
@@ -227,28 +227,28 @@
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>julUpgrade</name>
-                    <logo>julUpgrade.png</logo>
+                    <name>Jul sur le Vieux-Port</name>
+                    <logo>julUnlock.png</logo>
                     <seuil>50</seuil>
-                    <idcible>1</idcible>
+                    <idcible>6</idcible>
                     <ratio>2</ratio>
                     <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>julUpgrade</name>
-                    <logo>julUpgrade.png</logo>
+                    <name>Jul à la Bonne-Mère</name>
+                    <logo>julUnlock.png</logo>
                     <seuil>100</seuil>
-                    <idcible>1</idcible>
+                    <idcible>6</idcible>
                     <ratio>2</ratio>
                     <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
                 <pallier>
-                    <name>julUpgrade</name>
-                    <logo>julUpgrade.png</logo>
+                    <name>Jul au Vélodrome</name>
+                    <logo>julUnlock.png</logo>
                     <seuil>150</seuil>
-                    <idcible>1</idcible>
+                    <idcible>6</idcible>
                     <ratio>2</ratio>
                     <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
@@ -274,7 +274,7 @@
             <seuil>250000</seuil>
             <idcible>1</idcible>
             <ratio>3</ratio>
-            <typeratio>gain</typeratio>
+            <typeratio>vitesse</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>

@@ -46,4 +46,15 @@ public class Webservice {
         System.out.println("updateManager "+username);
     }
 
+    @PUT
+    @Path("upgrade")
+    @Consumes({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
+    public void putUpgrade(@Context HttpServletRequest request, @RequestBody PallierType newupgrade) {
+
+        String username = request.getHeader("X-user");
+
+        this.service.updateUpgrade(username, newupgrade);
+        System.out.println("updateUpgrade "+username);
+    }
+
 }
