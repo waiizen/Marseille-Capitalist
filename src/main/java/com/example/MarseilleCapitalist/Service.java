@@ -66,7 +66,6 @@ public class Service {
     public Boolean updateProduct(String username, ProductType newproduct) {
         World world = getWorld(username);
         ProductType product = findProductById(world, newproduct.getId());
-
         if (product == null) {return false;}
         int qttChange = newproduct.getQuantite() - product.getQuantite();
         if (qttChange == 1) {
@@ -77,6 +76,30 @@ public class Service {
 
             int nbproduit = product.getQuantite() + qttChange;
             product.setQuantite(nbproduit);
+
+            for (PallierType u : product.getPalliers().getPallier()) {
+                if (u.getSeuil() <= product.getQuantite() && !u.isUnlocked()) {
+                    u.setUnlocked(true);
+                    this.applyPallier(product, u);
+                }
+            }
+
+            int qtmin = world.getProducts().getProduct().get(0).getQuantite();
+            for (ProductType p : world.getProducts().getProduct()) {
+                if (qtmin > p.getQuantite()) {
+                    qtmin = p.getQuantite();
+                }
+            }
+
+            for (PallierType au : world.getAllunlocks().getPallier()) {
+                if (au.getSeuil() <= qtmin && !au.isUnlocked()) {
+                    au.setUnlocked(true);
+                    for (ProductType p : world.getProducts().getProduct()) {
+                        this.applyPallier(p, au);
+                    }
+                }
+            }
+
         } else if (qttChange > 1) {
             // cout d'achat de n produits
             double coutAchatNProduits = (product.getCout() * (1-(Math.pow(product.getCroissance(),qttChange))))/(1-product.getCroissance());
@@ -87,6 +110,29 @@ public class Service {
             int nbproduit = product.getQuantite() + qttChange;
             product.setQuantite(nbproduit);
 
+            for (PallierType u : product.getPalliers().getPallier()) {
+                if (u.getSeuil() <= product.getQuantite() && !u.isUnlocked()) {
+                    u.setUnlocked(true);
+                    this.applyPallier(product, u);
+                }
+            }
+
+            int qtmin = world.getProducts().getProduct().get(0).getQuantite();
+            for (ProductType p : world.getProducts().getProduct()) {
+                if (qtmin > p.getQuantite()) {
+                    qtmin = p.getQuantite();
+                }
+            }
+
+            for (PallierType au : world.getAllunlocks().getPallier()) {
+                if (au.getSeuil() <= qtmin && !au.isUnlocked()) {
+                    au.setUnlocked(true);
+                    for (ProductType p : world.getProducts().getProduct()) {
+                        this.applyPallier(p, au);
+                    }
+                }
+            }
+
         } else {
             // initialiser product.timeleft à product.vitesse
             // pour lancer la production}
@@ -96,6 +142,7 @@ public class Service {
         }
         saveWorldToXml(world, username);
         System.out.println("saved world for "+username);
+        System.out.println("new money : "+world.getMoney());
         return true;
     }
 

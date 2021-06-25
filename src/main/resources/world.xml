@@ -2,7 +2,7 @@
 <world>
     <name>Marseille Capitalist</name>
     <logo>marseille.png</logo>
-    <money>9999999</money>
+    <money>9999000</money>
     <score>0</score>
     <totalangels>0</totalangels>
     <activeangels>0</activeangels>
@@ -270,7 +270,7 @@
     <upgrades>
         <pallier>
             <name>ftHeussLenfoire</name>
-            <logo>ftHeussLenfoire.png</logo>
+            <logo>ftHeussLenfoire.jpg</logo>
             <seuil>250000</seuil>
             <idcible>1</idcible>
             <ratio>3</ratio>
@@ -279,7 +279,7 @@
         </pallier>
         <pallier>
             <name>ftAlonzo</name>
-            <logo>ftAlonzo.png</logo>
+            <logo>ftAlonzo.jpg</logo>
             <seuil>20000000000000</seuil>
             <idcible>1</idcible>
             <ratio>3</ratio>
@@ -288,7 +288,7 @@
         </pallier>
         <pallier>
             <name>ftShym</name>
-            <logo>ftShym.png</logo>
+            <logo>ftShym.jpg</logo>
             <seuil>20000000000000000000</seuil>
             <idcible>1</idcible>
             <ratio>3</ratio>
@@ -297,7 +297,7 @@
         </pallier>
         <pallier>
             <name>ftSoolking</name>
-            <logo>ftSoolking.png</logo>
+            <logo>ftSoolking.jpg</logo>
             <seuil>20000000000000000000000000</seuil>
             <idcible>1</idcible>
             <ratio>3</ratio>
@@ -306,7 +306,7 @@
         </pallier>
         <pallier>
             <name>ftMPokora</name>
-            <logo>ftMPokora.png</logo>
+            <logo>ftMPokora.jpg</logo>
             <seuil>500000</seuil>
             <idcible>2</idcible>
             <ratio>3</ratio>
@@ -315,7 +315,7 @@
         </pallier>
         <pallier>
             <name>ftBrasco</name>
-            <logo>ftBrasco.png</logo>
+            <logo>ftBrasco.jpg</logo>
             <seuil>50000000000000</seuil>
             <idcible>2</idcible>
             <ratio>3</ratio>
@@ -324,7 +324,7 @@
         </pallier>
         <pallier>
             <name>ftLaFouine</name>
-            <logo>ftLaFouine.png</logo>
+            <logo>ftLafouine.jpg</logo>
             <seuil>50000000000000000000</seuil>
             <idcible>2</idcible>
             <ratio>3</ratio>
@@ -333,7 +333,7 @@
         </pallier>
         <pallier>
             <name>ftMaitreGims</name>
-            <logo>ftMaitreGims.png</logo>
+            <logo>ftMaitreGims.jpg</logo>
             <seuil>50000000000000000000000000</seuil>
             <idcible>2</idcible>
             <ratio>3</ratio>
