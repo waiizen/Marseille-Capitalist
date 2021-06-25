@@ -35,6 +35,9 @@ public class Service {
 
                 System.out.println(world.getName());
                 System.out.println("username : " + username);
+                System.out.println("LatsworldMoney : " + world.getMoney());
+                System.out.println("LastWorldScore : " + world.getScore());
+                System.out.println("LastTotalAngel : " + world.getActiveangels());
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -273,6 +276,38 @@ public class Service {
             default:
                 break;
         }
+    }
+
+    public Boolean updateAngel(String username, int newAngel) {
+        World world = this.getWorld(username);
+        world = this.calculScore(world);
+        world.setActiveangels(world.getActiveangels() + newAngel);
+        this.saveWorldToXml(world, username);
+        return true;
+    }
+
+    public boolean resetWorld(String username) {
+        World world = getWorld(username);
+
+        double activeAngels = world.getActiveangels();
+        double totalAngels = world.getTotalangels();
+
+        double calculAnges = Math.floor( 150 * Math.sqrt( world.getMoney() / (Math.pow(10, 15)) ));
+        double newAngels = Math.floor((calculAnges>totalAngels) ? calculAnges-totalAngels : 0);
+
+        System.out.println("Calcul anges - ActiveA =" + activeAngels + "  total : " + totalAngels + " newA = " + newAngels);
+        File fichierJoueur = new File(username + "-world.xml");
+        fichierJoueur.delete();
+
+        World newWorld = getWorld(username);
+        newWorld.setActiveangels( activeAngels + newAngels );
+        newWorld.setTotalangels( totalAngels + newAngels );
+        System.out.println("[RESET]  " + username + "\tTT Angels " + newWorld.getTotalangels() + "  -  ACTIVE Angels " + newWorld.getActiveangels());
+
+
+
+        saveWorldToXml(newWorld, username);
+        return true;
     }
 
 }

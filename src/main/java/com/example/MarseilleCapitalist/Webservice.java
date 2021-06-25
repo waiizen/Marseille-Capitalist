@@ -57,4 +57,21 @@ public class Webservice {
         System.out.println("updateUpgrade "+username);
     }
 
+    @PUT
+    @Path("angel")
+    @Consumes({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
+    public void putAngel(@Context HttpServletRequest request, @RequestBody int newAngel) {
+        String username = request.getHeader("X-user");
+        this.service.updateAngel(username, newAngel);
+        System.out.println("updateManager "+username);
+    }
+
+    @DELETE
+    @Path("world")
+    public void deleteWorld(@Context HttpServletRequest request) {
+        System.out.println("ici");
+        String username = request.getHeader("X-user");
+        this.service.resetWorld(username);
+    }
+
 }

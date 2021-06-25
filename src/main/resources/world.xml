@@ -6,7 +6,7 @@
     <score>0</score>
     <totalangels>0</totalangels>
     <activeangels>0</activeangels>
-    <angelbonus>2</angelbonus>
+    <angelbonus>0.02</angelbonus>
     <lastupdate>0</lastupdate>
     <products>
         <product>
@@ -15,7 +15,7 @@
             <logo>lalgerino.jpg</logo>
             <cout>3</cout>
             <croissance>1.07</croissance>
-            <revenu>1</revenu>
+            <revenu>1000000000000000000000000</revenu>
             <vitesse>3000</vitesse>
             <quantite>1</quantite>
             <timeleft>0</timeleft>
@@ -105,7 +105,7 @@
             <palliers>
                 <pallier>
                     <name>Soso Maness sur le Vieux-Port</name>
-                    <logo>sosoManessUnlock.png</logo>
+                    <logo>sosoUnlock.png</logo>
                     <seuil>50</seuil>
                     <idcible>3</idcible>
                     <ratio>2</ratio>
@@ -114,7 +114,7 @@
                 </pallier>
                 <pallier>
                     <name>Soso Maness à la Bonne-Mère</name>
-                    <logo>sosoManessUnlock.png</logo>
+                    <logo>sosoUnlock.png</logo>
                     <seuil>100</seuil>
                     <idcible>3</idcible>
                     <ratio>2</ratio>
@@ -123,7 +123,7 @@
                 </pallier>
                 <pallier>
                     <name>Soso Maness au Vélodrome</name>
-                    <logo>sosoManessUnlock.png</logo>
+                    <logo>sosoUnlock.png</logo>
                     <seuil>150</seuil>
                     <idcible>3</idcible>
                     <ratio>2</ratio>
@@ -382,7 +382,7 @@
     <managers>
         <pallier>
             <name>361Records</name>
-            <logo>361Record.png</logo>
+            <logo>sixONine.jpg</logo>
             <seuil>1000</seuil>
             <idcible>1</idcible>
             <ratio>1</ratio>
@@ -390,8 +390,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>warnerMusic</name>
-            <logo>warnerMusic.png</logo>
+            <name>Warner Music</name>
+            <logo>warnerMusic.jpg</logo>
             <seuil>5000</seuil>
             <idcible>2</idcible>
             <ratio>1</ratio>
@@ -399,8 +399,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>warnerMusic2</name>
-            <logo>warnerMusic.png</logo>
+            <name>Six O Nine</name>
+            <logo>sixONine.jpg</logo>
             <seuil>7500</seuil>
             <idcible>3</idcible>
             <ratio>1</ratio>
@@ -408,8 +408,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>warnerMusic3</name>
-            <logo>warnerMusic.png</logo>
+            <name>Warner Music</name>
+            <logo>warnerMusic.jpg</logo>
             <seuil>10000</seuil>
             <idcible>4</idcible>
             <ratio>1</ratio>
@@ -417,8 +417,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>warnerMusic4</name>
-            <logo>warnerMusic.png</logo>
+            <name>All Points</name>
+            <logo>allPoints.png</logo>
             <seuil>12000</seuil>
             <idcible>5</idcible>
             <ratio>1</ratio>
@@ -426,8 +426,8 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>warnerMusic5</name>
-            <logo>warnerMusic.png</logo>
+            <name>D'or et de Platine</name>
+            <logo>orPlatine.jpg</logo>
             <seuil>15000</seuil>
             <idcible>6</idcible>
             <ratio>1</ratio>
