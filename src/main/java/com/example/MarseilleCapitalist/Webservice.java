@@ -24,7 +24,6 @@ public class Webservice {
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Response getWorld(@Context HttpServletRequest request) {
         String username = request.getHeader("X-user");
-        System.out.println("username: "+username);
         return Response.ok(service.getWorld(username)).build();
     }
 
@@ -34,7 +33,6 @@ public class Webservice {
     public void putProduct(@Context HttpServletRequest request, @RequestBody ProductType p) {
         String username = request.getHeader("X-user");
         service.updateProduct(username, p);
-        System.out.println("updateProduct "+username);
     }
 
     @PUT
@@ -43,7 +41,6 @@ public class Webservice {
     public void putManager(@Context HttpServletRequest request, @RequestBody PallierType newManager) {
         String username = request.getHeader("X-user");
         this.service.updateManager(username, newManager);
-        System.out.println("updateManager "+username);
     }
 
     @PUT
@@ -52,9 +49,7 @@ public class Webservice {
     public void putUpgrade(@Context HttpServletRequest request, @RequestBody PallierType newupgrade) {
 
         String username = request.getHeader("X-user");
-
         this.service.updateUpgrade(username, newupgrade);
-        System.out.println("updateUpgrade "+username);
     }
 
     @PUT
@@ -63,13 +58,11 @@ public class Webservice {
     public void putAngel(@Context HttpServletRequest request, @RequestBody int newAngel) {
         String username = request.getHeader("X-user");
         this.service.updateAngel(username, newAngel);
-        System.out.println("updateManager "+username);
     }
 
     @DELETE
     @Path("world")
     public void deleteWorld(@Context HttpServletRequest request) {
-        System.out.println("ici");
         String username = request.getHeader("X-user");
         this.service.resetWorld(username);
     }

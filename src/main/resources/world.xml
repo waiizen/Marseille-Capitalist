@@ -2,7 +2,7 @@
 <world>
     <name>Marseille Capitalist</name>
     <logo>marseille.png</logo>
-    <money>9999000</money>
+    <money>99999990</money>
     <score>0</score>
     <totalangels>0</totalangels>
     <activeangels>0</activeangels>
@@ -15,7 +15,7 @@
             <logo>lalgerino.jpg</logo>
             <cout>3</cout>
             <croissance>1.07</croissance>
-            <revenu>1000000000000000000000000</revenu>
+            <revenu>1</revenu>
             <vitesse>3000</vitesse>
             <quantite>1</quantite>
             <timeleft>0</timeleft>
@@ -258,13 +258,13 @@
     </products>
     <allunlocks>
         <pallier>
-            <name>str1234</name>
-            <logo>str1234</logo>
-            <seuil>3.1415926535</seuil>
-            <idcible>123</idcible>
-            <ratio>3.1415926535</ratio>
-            <typeratio>vitesse</typeratio>
-            <unlocked>true</unlocked>
+            <name>Disque de platine</name>
+            <logo>disquePlatine.png</logo>
+            <seuil>200</seuil>
+            <idcible>0</idcible>
+            <ratio>4</ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>false</unlocked>
         </pallier>
     </allunlocks>
     <upgrades>
@@ -408,7 +408,7 @@
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Warner Music</name>
+            <name>Warner Music2</name>
             <logo>warnerMusic.jpg</logo>
             <seuil>10000</seuil>
             <idcible>4</idcible>
